@@ -8,7 +8,7 @@ client = Client(account_sid, auth_token)
 
 def enviar_mensagem(numero, mensagem):
     from_whatsapp_number = 'whatsapp:+14155238886'
-    to_whatsapp_number = f'whatsapp:+{numero}'
+    to_whatsapp_number = f'whatsapp:+5511995271952'
     message = client.messages.create(
         body=mensagem,
         from_=from_whatsapp_number,
