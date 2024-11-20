@@ -3,11 +3,11 @@ from twilio.rest import Client
 
 # Credenciais Twilio
 account_sid = 'ACd06323047f5c26c22e466372b9e52e82'
-auth_token = '2a00ca945416ca7bb324fbf72d4e14f8'
+auth_token = '32837cc5e7ba6dae832528388d0841c1'
 client = Client(account_sid, auth_token)
 
 def enviar_mensagem(numero, mensagem):
-    from_whatsapp_number = 'whatsapp:+14155238886'
+    from_whatsapp_number = 'whatsapp:+5511995271952'
     to_whatsapp_number = f'whatsapp:+{numero}'
     message = client.messages.create(
         body=mensagem,
