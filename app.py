@@ -2,12 +2,12 @@ import streamlit as st
 from twilio.rest import Client
 
 # Credenciais Twilio
-account_sid = 'SEU_ACCOUNT_SID'
-auth_token = 'SEU_AUTH_TOKEN'
+account_sid = 'ACd06323047f5c26c22e466372b9e52e82'
+auth_token = '2a00ca945416ca7bb324fbf72d4e14f8'
 client = Client(account_sid, auth_token)
 
 def enviar_mensagem(numero, mensagem):
-    from_whatsapp_number = 'whatsapp:+5511995271952'
+    from_whatsapp_number = 'whatsapp:+17602922639'
     to_whatsapp_number = f'whatsapp:+{numero}'
     message = client.messages.create(
         body=mensagem,
